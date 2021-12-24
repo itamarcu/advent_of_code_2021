@@ -16,11 +16,21 @@ fishie_clusters = [0] * 9
 for fish in fishies:
     fishie_clusters[fish] += 1
     
-for day in range(256):
+for day in range(80):
     newborns = fishie_clusters[0]
     fishie_clusters = fishie_clusters[1:] + [newborns]
     fishie_clusters[6] += newborns
     
 total = sum(fishie_clusters)
 
-print(total)
+print(total)  # 379414
+
+
+for day in range(256 - 80):
+    newborns = fishie_clusters[0]
+    fishie_clusters = fishie_clusters[1:] + [newborns]
+    fishie_clusters[6] += newborns
+
+total = sum(fishie_clusters)
+
+print(total)  # 1705008653296

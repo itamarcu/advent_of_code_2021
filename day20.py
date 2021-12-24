@@ -12,6 +12,7 @@ for y in range(HEIGHT):
     for x in range(WIDTH):
         pixels[(x, y)] = 1 if lines[2 + y][x] == '#' else 0
 
+output = {}
 for step in range(2):
     output = {}
     base_pixel = 0 if algorithm_map[0] == 0 else step % 2
@@ -29,9 +30,9 @@ for step in range(2):
     #     print()
     pixels = output
 
-print(sum(output.values()))  # 5291
+print(sum(output.values()))  # 5663
 
-for step in range(48):
+for step in range(50 - 2):
     output = {}
     base_pixel = 0 if algorithm_map[0] == 0 else step % 2
     for x in range(0 - step - EXTRA, WIDTH + step + EXTRA):
@@ -43,4 +44,4 @@ for step in range(48):
             output[(x, y)] = algorithm_map[total]
     pixels = output
 
-print(sum(output.values()))  # 16665
+print(sum(output.values()))  # 19638

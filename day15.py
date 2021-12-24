@@ -5,7 +5,7 @@ with open('day15.txt') as input_file:
 lines = [line.rstrip('\n') for line in input_lines]
 HEIGHT = len(lines)
 WIDTH = len(lines[0])
-print(WIDTH, HEIGHT)
+# print(WIDTH, HEIGHT)
 cavern = {}
 for y in range(HEIGHT):
     for x in range(WIDTH):

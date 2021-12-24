@@ -26,7 +26,7 @@ for line in lines:
        
 total = depth * distance
 
-print(depth, distance, total)
+print(total)  # 2150351
 
 
 #####################
@@ -51,4 +51,4 @@ for line in lines:
        
 total = depth * distance
 
-print(depth, distance, aim, total)
+print(total)  # 1842742223

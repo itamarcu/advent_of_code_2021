@@ -184,14 +184,14 @@ def main():
     for scanner in scanners:
         for beacon in scanner.beacons:
             all_beacon_locations.add((beacon.x, beacon.y, beacon.z))
-    print(len(all_beacon_locations))
+    print(len(all_beacon_locations))  # 425
 
     biggest_distance = 0
     for scanner_1 in scanners:
         for scanner_2 in scanners:
             distance = manhattan_distance(scanner_1.world_coords, scanner_2.world_coords)
             biggest_distance = max(biggest_distance, distance)
-    print(biggest_distance)
+    print(biggest_distance)  # 13354
 
 
 if __name__ == '__main__':

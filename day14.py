@@ -36,10 +36,10 @@ letter_counts_after_10 = count_after_simulating(chain_after_10)
 highest_count_after_10 = max(letter_counts_after_10.values())
 lowest_count_after_10 = min(letter_counts_after_10.values())
 print('part 1:')
-print(highest_count_after_10 - lowest_count_after_10)
+print(highest_count_after_10 - lowest_count_after_10)  # 3831
 
 
-########### PART 2
+########### PART 2 (solved pretty badly;  we did not realize the trick, so we used a weird partial caching method)
 
 output_counts_after_20_steps_per_rule = {}
 
@@ -67,7 +67,7 @@ print('almost done')
 highest_count_after_40 = max(letter_counts_after_40.values())
 lowest_count_after_40 = min(letter_counts_after_40.values())
 print('part 2:')
-print(highest_count_after_40 - lowest_count_after_40)
+print(highest_count_after_40 - lowest_count_after_40)  # 5725739914282
 
 # example...
 # WRONG (overcounting overlaps at edges):
@@ -99,4 +99,5 @@ for _ in range(40):
         pairs[x+b] += c
         chars[x] += c
 
+print('and now, repeating with a correct, super fast, genius solution we found on the internet later:')
 print(max(chars.values())-min(chars.values()))

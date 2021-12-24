@@ -18,7 +18,7 @@ for line in lines:
     parsed_lines.append([start.split(' '), end.split(' ')])
     
 answer = sum(sum(1 if is_one_of_1478(abcdefg) else 0 for abcdefg in line[1]) for line in parsed_lines)
-print(answer)
+print(answer)  # 294
 
 # deductive solution time
 
@@ -73,4 +73,4 @@ for line in parsed_lines:
     output_value = int(output_digits)
     answer_total += output_value
 
-print(answer_total)
+print(answer_total)  # 973292

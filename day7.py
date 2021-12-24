@@ -42,7 +42,7 @@ fuel = count_fuel_to_target_position(count_buckets, best_target_position)
 # print(best_target_position, fuel, '(best solution)')
 # print(best_target_position+1, count_fuel_to_target_position(count_buckets, best_target_position+1))
 
-print(fuel)
+print(fuel)  # 336040
 
 
 ########
@@ -62,7 +62,7 @@ high = max(count_buckets.keys())
 while low != high:
     fuel_if_low_is_target = count_fuel_to_target_position_part_2(count_buckets, low)
     fuel_if_high_is_target = count_fuel_to_target_position_part_2(count_buckets, high)
-    print(low, fuel_if_low_is_target, 'vs', high, fuel_if_high_is_target)
+    # print(low, fuel_if_low_is_target, 'vs', high, fuel_if_high_is_target)
     if fuel_if_low_is_target < fuel_if_high_is_target:
         high = (low + high) // 2
     elif fuel_if_low_is_target > fuel_if_high_is_target:
@@ -78,4 +78,4 @@ fuel = count_fuel_to_target_position_part_2(count_buckets, best_target_position)
 # print(best_target_position, fuel, '(best solution)')
 # print(best_target_position+1, count_fuel_to_target_position_part_2(count_buckets, best_target_position+1))
 
-print(fuel)
+print(fuel)  # 94813675

@@ -29,7 +29,7 @@ for y in range(HEIGHT):
             total_risk_level_sum += risk_level
             low_points.append((y, x))
 
-print(total_risk_level_sum)  # 478
+print(total_risk_level_sum)  # 456
 
 ######## part 2
 
@@ -50,4 +50,4 @@ for low_point in low_points:
     basin_sizes.append(len(visited))
 
 three_largest = sorted(basin_sizes, reverse=True)[0:3]
-print(three_largest[0] * three_largest[1] * three_largest[2])
+print(three_largest[0] * three_largest[1] * three_largest[2])  # 1047744

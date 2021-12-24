@@ -108,8 +108,10 @@ current = lines[0]
 for line in lines[1:]:
     current = add(current, line)
     # print(current)
-print(magnitude(json.loads(current)))
+print(magnitude(json.loads(current)))  # 4207
 
+
+# takes a while to calculate
 
 best_magnitude = 0
 for line in lines:
@@ -119,4 +121,4 @@ for line in lines:
         this_magnitude = magnitude(json.loads(add(line, other_line)))
         best_magnitude = max(this_magnitude, best_magnitude)
 
-print(best_magnitude)
+print(best_magnitude)  # 4635

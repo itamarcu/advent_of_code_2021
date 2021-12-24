@@ -25,7 +25,7 @@ for i in range(digit_count):
 
 gamma = int(''.join(gammas), 2)
 epsilon = int(''.join(epsilons), 2)
-print(gamma * epsilon)
+print(gamma * epsilon)  # 2967914
 
 #########################
 
@@ -47,7 +47,6 @@ for i in range(digit_count):
     leftover_numbers = filtered_numbers_by_common_at_i(leftover_numbers, i, True)
 co2_scrubber_rating = leftover_numbers[0]
 
-print(oxygen_generator_rating, co2_scrubber_rating)
 oxygen_generator_rating = int(''.join(oxygen_generator_rating), 2)
 co2_scrubber_rating = int(''.join(co2_scrubber_rating), 2)
-print(oxygen_generator_rating * co2_scrubber_rating)
+print(oxygen_generator_rating * co2_scrubber_rating)  # 7041258

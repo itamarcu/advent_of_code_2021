@@ -32,15 +32,15 @@ for line in lines:
         # diagonal
         continue
         
-for y in range(10):
-    print(''.join(str(points_seen_counts.get((x, y), '.')) for x in range(10)))
+# for y in range(10):
+#     print(''.join(str(points_seen_counts.get((x, y), '.')) for x in range(10)))
 
 total = 0
 for point, count in points_seen_counts.items():
     if count >= 2:
         total += 1
         
-print(total)
+print(total)  # 6267
 
 
 for line in lines:
@@ -69,7 +69,7 @@ for point, count in points_seen_counts.items():
     if count >= 2:
         total += 1
         
-for y in range(10):
-    print(''.join(str(points_seen_counts.get((x, y), '.')) for x in range(10)))
+# for y in range(10):
+#     print(''.join(str(points_seen_counts.get((x, y), '.')) for x in range(10)))
     
-print(total)
+print(total)  # 20196

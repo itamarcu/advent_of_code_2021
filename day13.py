@@ -33,6 +33,6 @@ for fold in folds:
         points = [(x, y if y < offset else 2 * offset - y) for (x, y) in points]
     points = list(set(points))
     if step == 1:
-        print(len(points))
+        print(len(points))  # 708
 
-print_points()
+print_points()  # EBLUBRFH

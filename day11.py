@@ -30,16 +30,16 @@ while True:
     # count flashes
     flashes_this_step = sum(sum(o >= 10 for o in line) for line in octopuses)
     # print them all
-    print(f'step {step}: {flashes_this_step}')
-    for line in octopuses:
-        print(''.join(str(o if o < 10 else '█') for o in line))
-    print()
+    # print(f'step {step}: {flashes_this_step}')
+    # for line in octopuses:
+    #     print(''.join(str(o if o < 10 else '█') for o in line))
+    # print()
     total_flashes += flashes_this_step
     # reset flashes
     octopuses = [[0 if o >= 10 else o for o in line] for line in octopuses]
     # part 1
     if step == 100:
-        print(total_flashes)  # 1721
+        print(total_flashes)  # 1713
     if flashes_this_step == len(octopuses) * len(octopuses[0]):
-        print(step + 1)  #
+        print(step + 1)  # 502
         break

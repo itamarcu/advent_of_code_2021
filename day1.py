@@ -17,7 +17,7 @@ for i in range(len(depths)-1):
     if depth_2 > depth_1:
         increases += 1
 
-print(increases)
+print(increases)  # 1521
 
 
 window_increases = 0
@@ -28,4 +28,4 @@ for i in range(len(depths)-3):
     if depth_4  > depth_1:
         window_increases += 1
 
-print(window_increases)
+print(window_increases)  # 1543

@@ -90,7 +90,7 @@ def run_bingo_until_win(boards, called_numbers):
                     return score
                 
 boards, called_numbers = setup(lines)
-print(run_bingo_until_win(boards, called_numbers))  # 33462
+print(run_bingo_until_win(boards, called_numbers))  # 51776
                     
                     
 ##################
@@ -113,7 +113,7 @@ def run_bingo_until_last_win(boards, called_numbers):
                 
 
 boards, called_numbers = setup(lines)
-print(run_bingo_until_last_win(boards, called_numbers)) # 30070
+print(run_bingo_until_last_win(boards, called_numbers)) # 16830
 
 
 

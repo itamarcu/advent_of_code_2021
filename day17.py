@@ -53,5 +53,5 @@ for xs in possible_x_speeds:
                 # overshot
                 break
 
-print(best_result)
-print(total_answers)  # not 360
+print(best_result[2])  # 10585
+print(total_answers)  # 5247

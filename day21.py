@@ -23,7 +23,7 @@ while all(p[1] < THOUSAND for p in players):
     turn += 1
 
 loser = players[0] if players[0][1] < 1000 else players[1]
-print(loser[1] * rolls)  # 684495
+print(loser[1] * rolls)  # 513936
 
 # part 2
 
@@ -98,4 +98,4 @@ while uncalculated_universes:
             universe_counts[new_universe] = 0
         universe_counts[new_universe] += universe_count
 
-print(max(total_wins))
+print(max(total_wins))  # 105619718613031

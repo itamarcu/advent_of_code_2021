@@ -86,7 +86,7 @@ def add_up_total_version_numbers(packet: Packet):
     return result
 
 
-print(add_up_total_version_numbers(top_packet))
+print(add_up_total_version_numbers(top_packet))  # 875
 
 
 def prod(iterable):
@@ -122,4 +122,4 @@ def evaluate_recursively(packet: Packet):
         raise ValueError('weird packet operator!')
     raise ValueError('weird packet class!')
 
-print(evaluate_recursively(top_packet))
+print(evaluate_recursively(top_packet))  # 1264857437203

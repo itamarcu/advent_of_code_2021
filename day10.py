@@ -50,7 +50,7 @@ for line in lines:
             score += AUTOCOMPLETE_SCORE_TABLE[BRACKETS[c]]
         completion_scores.append(score)
 
-print(total_syntax_score)
+print(total_syntax_score)  # 469755
 
 completion_scores.sort()
-print(completion_scores[(len(completion_scores) - 1) // 2])
+print(completion_scores[(len(completion_scores) - 1) // 2])  # 2762335572

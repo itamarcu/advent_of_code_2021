@@ -45,7 +45,9 @@ while paths:
             continue
         paths.append(path + [neighbor_cave])
 
-print(len(complete_paths))
+print(len(complete_paths))  # 5333
+
+# (the next part takes some time to calculate)
 
 complete_paths: List[Path] = []
 paths: List[Path] = [[START]]
@@ -72,4 +74,4 @@ while paths:
 
 # for path in complete_paths:
 #     print(','.join(path))
-print(len(complete_paths))
+print(len(complete_paths))  # 146553
