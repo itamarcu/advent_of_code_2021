@@ -5,7 +5,7 @@ Created on Wed Dec  1 19:18:50 2021
 @author: Q
 """
 
-with open('day1-submarine-input.txt') as input_file:
+with open('day1.txt') as input_file:
     input_lines = input_file.readlines()
 depths = [int(line.rstrip('\n')) for line in input_lines]
     
